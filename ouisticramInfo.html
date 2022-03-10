@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Ouisticram</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="ouisticram.png" alt="Ouisticram">
+            <p>Ouisticram</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="chimpenfeu.png" alt="Chimpenfeu">
+            <p>Chimpenfeu</p>
+        </div>
+
+        <div id="c" class="hidden">
+            <img src="simiabraz.png" alt="Simiabraz">
+            <p>Simiabraz</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: feu
+                <li>Taille: 0.5m
+                <li>Poids: 6.2kg
+                <li>Description: "La flamme de sa queue est alimentée par un gaz de son estomac. <br>
+                    Même la pluie ne saurait l'éteindre."
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: feu, combat
+                <li>Taille: 0.9m
+                <li>Poids: 22kg
+                <li>Description: "Il attaque en prenant appui sur les murs et les plafonds. <br> Sa queue ardente n'est pas son seul atout."
+            </ul>
+            
+            <ul class="hidden">                
+                <li>Type: feu, combat
+                <li>Taille: 1.2m                  
+                <li>Poids: 55kg
+                <li>Description: "Sa couronne de feu trahit son tempérament bouillant. <br> Sa vitesse est inégalée."
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="ouisticram.png" alt="Ouisticram">
+            <p>Ouisticram</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="chimpenfeu.png" alt="Chimpenfeu">
+            <p>Chimpenfeu</p> 
+        </div>
+
+        <div id="z" onclick="evolution(this)">    
+            <img src="simiabraz.png" alt="Simiabraz">
+            <p>Simiabraz</p>   
+        </div>
+
+</div>
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Ousticram";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Chimpenfeu";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "Simiabraz";
+    }
+
+}
+
+</script>
+</body>
+</html>

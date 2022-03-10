@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Étourmi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="etourmi.png" alt="Étourmi">
+            <p>Étourmi</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="etourvol.png" alt="Étourvol">
+            <p>Étourvol</p>
+        </div>
+
+        <div id="c" class="hidden">
+            <img src="etouraptor.png" alt="Étouraptor">
+            <p>Étouraptor</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: normal, vol
+                <li>Taille: 0.3m
+                <li>Poids: 2kg
+                <li>Description: "Il est difficile à repérer lorsqu'il n'évolue pas au sein d'une grande volée. <br> Ses cris sont stridents."
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: normal, vol
+                <li>Taille: 0.6m
+                <li>Poids: 15.5kg
+                <li>Description: "Il peuple les champs et les forêts. <br> Lorsque deux volées se croisent, elles luttent pour le territoire."
+            </ul>
+            
+            <ul class="hidden">                
+                <li>Type: normal, vol
+                <li>Taille: 1.2m                 
+                <li>Poids: 24.9kg
+                <li>Description: "Ses ailes et ses pattes ont des muscles développés. <br> Il peut voler en agrippant un petit Pokémon."
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="etourmi.png" alt="Étourmi">
+            <p>Étourmi</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="etourvol.png" alt="Étourvol">
+            <p>Étourvol</p> 
+        </div>
+
+        <div id="z" onclick="evolution(this)">    
+            <img src="etouraptor.png" alt="Étouraptor">
+            <p>Étouraptor</p>   
+        </div>
+
+</div>
+
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Étourmi";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Étourvol";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "Étouraptor";
+    }
+
+}
+
+</script>
+</body>
+</html>

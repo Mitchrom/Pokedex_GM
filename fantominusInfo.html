@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Fantominus</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="fantominus.png" alt="Fantominus">
+            <p>Fantominus</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="spectrum.png" alt="Spectrum">
+            <p>Spectrum</p>
+        </div>
+
+        <div id="c" class="hidden">
+            <img src="ectoplasma.png" alt="Ectoplasma">
+            <p>Ectoplasma</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: spectre, poison
+                <li>Taille: 1.3m
+                <li>Poids: 0.1kg
+                <li>Description: "Un Pokémon né de gaz toxiques. <br> Son nuage toxique peut terrasser les ennemis les plus imposants."
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: spectre, poison
+                <li>Taille: 1.6m
+                <li>Poids: 0.1kg
+                <li>Description: "Il vole l'énergie vitale de l'ennemi d'un coup de langue gazeuse. <br> Il aime chasser dans l'ombre."
+            </ul>
+            
+            <ul class="hidden">                
+                <li>Type: spectre, poison
+                <li>Taille: 1.5m                
+                <li>Poids: 40.5kg
+                <li>Description: "Il guette l'occasion de voler l'énergie vitale de sa proie, caché dans un coin sombre de la pièce."
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="fantominus.png" alt="Fantominus">
+            <p>Fantominus</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="spectrum.png" alt="Spectrum">
+            <p>Spectrum</p> 
+        </div>
+
+        <div id="z" onclick="evolution(this)">    
+            <img src="ectoplasma.png" alt="Ectoplasma">
+            <p>Ectoplasma</p>   
+        </div>
+
+</div>
+
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Fantominus";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Spectrum";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "Ectoplasma";
+    }
+
+}
+
+</script>
+</body>
+</html>

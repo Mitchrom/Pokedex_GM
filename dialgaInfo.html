@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dialga</title>
+        
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="dialga.png" alt="Dialga">
+            <p>Dialga</p>
+        </div>
+
+        <div id="b" class="xxx">
+            <img src="User_Avatar_2.png" alt="">
+            <p>Steelix</p>
+        </div>
+
+        <div id="c" class="xxx">
+            <img src="User_Avatar_2.png" alt="">
+            <p>xxx</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: acier, dragon
+                <li>Taille: 5.4m
+                <li>Poids: 683kg
+                <li>Description: "Les mythes parlent de ce Pokémon. On dit que le temps s'est mis en mouvement à sa naissance."
+            </ul>
+                
+            <ul class="xxx">  
+                <li>Description: C'est quand même fou
+            </ul>
+            
+            <ul class="xxx">                
+                <li>Description: Ces pokémons sont des dieux mais on peut les capturer et les faire combattre pour nous. Des DIEUX
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="dialga.png" alt="Dialga">
+            <p>Dialga</p>
+        </div>
+
+        <div id="y" class="xxx" onclick="evolution(this)">    
+            <img src="User_Avatar_2.png" alt="">
+            <figcation>xxx</p> 
+        </div>
+
+        <div id="z" class="xxx" onclick="evolution(this)">    
+            <img src="User_Avatar_2.png" alt="Ectoplasma">
+            <p>xxx</p>   
+        </div>
+
+</div>
+
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Palkia";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Red";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "xxx"; //alors là si quelqu'un arrive à réussir cette condition vraiment bravo
+    }
+
+}
+
+</script>
+</body>
+</html>

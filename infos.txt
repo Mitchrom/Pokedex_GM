@@ -1,0 +1,321 @@
+logo(retour menu) toujours tout en haut
+logo de chaque type
+
+
+            type:
+            taille: 
+            poids: 
+            description: 
+            forme antérieure: 
+            évolution: 
+
+
+ouisticram{
+    type: feu
+    taille: 0.5m
+    poids: 6.2kg
+    description: "La flamme de sa queue est alimentée par un gaz de son estomac. Même la pluie ne saurait l'éteindre."
+    forme antérieure: aucune
+    évolution: chimpenfeu, simiabraz
+
+        chimpenfeu{
+            type: feu, combat
+            taille: 0.9m
+            poids: 22kg
+            description: "Il attaque en prenant appui sur les murs et les plafonds. Sa queue ardente n'est pas son seul atout."
+            forme antérieure: ouisticram
+            évolution: simiabraz
+
+                simiabraz{
+                    type: feu, combat
+                    taille: 1.2m 
+                    poids: 55kg
+                    description: "Sa couronne de feu trahit son tempérament bouillant. Sa vitesse est inégalée."
+                    forme antérieure: chimpenfeu
+                    évolution: aucune
+
+                }
+        }
+}
+
+tiplouf{
+    type: eau
+    taille: 0.4m
+    poids: 5.2kg
+    description: "Il vit sur les côtes des régions nordiques. C'est un nageur doué, qui peut plonger durant 10 minutes."
+    forme antérieure: aucune
+    évolution: prinplouf, pingoléon
+
+        prinplouf{
+            type: eau
+            taille: 0.8m
+            poids: 23kg
+            description: "Les coups violents de ses ailes tranchent le bois le plus dur. Il chasse dans les eaux glacées."
+            forme antérieure: tiplouf
+            évolution: pingoléon
+
+                pingoléon{
+                type: eau, acier
+                taille: 1.7m
+                poids: 84.5kg
+                description: "Il nage aussi vite qu'un hors-bord. Le tranchant de ses ailes peut fendre un bloc de glace à la dérive."
+                forme antérieure: prinplouf
+                évolution: aucune
+
+                }
+        }
+}
+
+tortipouss{
+    type: plante
+    taille: 0.4m
+    poids: 10.2kg
+    description: "Son corps produit de l'oxygène par photosynthèse. La feuille sur sa tête flétrit quand il a soif."
+    forme antérieure: aucune
+    évolution: boskara, torterra
+
+        boskara{
+            type: plante
+            taille: 1.1m
+            poids: 97kg
+            description: "Sa carapace est faite de terre durcie. Certains Pokémon picorent les Baies des arbres sur son dos."
+            forme antérieure: tortipouss
+            évolution: torterra
+
+                torterra{
+                type: plante, sol
+                taille: 2.2m
+                poids: 310kg
+                description: "Autrefois, les gens pensaient qu'un gigantesque Torterra vivait sous la surface de la terre."
+                forme antérieure: boskara
+                évolution: aucune
+
+                }
+        }
+}
+
+riolu{
+    type: combat
+    taille: 0.7m
+    poids: 20.2kg
+    description: 
+    forme antérieure: "Son corps est frêle mais puissant. Il peut traverser trois montagnes et deux canyons en une nuit."
+    évolution: lucario
+
+        lucario{
+            type: combat, acier
+            taille: 1.2m
+            poids: 54kg
+            description: "Il peut deviner les pensées et les mouvements des autres en analysant leur aura."
+            forme antérieure: riolu
+            évolution: aucune
+
+        }
+}
+
+pichu{
+    type: électrik
+    taille: 0.3m
+    poids: 2kg
+    description: "Il prouve son courage en touchant la queue électrifiée de ses pairs."  
+    forme antérieure: aucune
+    évolution: pikachu, raichu
+
+        pikachu{
+            type: éléctrik
+            taille: 0.4m
+            poids: 6kg
+            description: "Si les poches électriques de ses joues crépitent, c'est qu'il est sur ses gardes."
+            forme antérieure: pichu
+            évolution: raichu
+
+                raichu{
+                type: éléctrik
+                taille: 0.8m 
+                poids: 30kg
+                description: "Il peut terrasser des ennemis bien plus imposants en libérant une décharge de 100 000 volts."
+                forme antérieure: aucune
+                évolution: pikachu
+
+
+                }
+        }
+}
+
+étourmi{
+    type: normal, vol
+    taille: 0.3m
+    poids: 2kg
+    description: "Il est difficile à repérer lorsqu'il n'évolue pas au sein d'une grande volée. Ses cris sont stridents."
+    forme antérieure: aucune
+    évolution: étourvol, étouraptor
+
+        étourvol{
+            type: normal, vol
+            taille: 0.6m
+            poids: 15.5kg
+            description: "Il peuple les champs et les forêts. Lorsque deux volées se croisent, elles luttent pour le territoire."
+            forme antérieure: étourmi
+            évolution: étouraptor
+
+                étouraptor{
+                type: normal, vol
+                taille: 1.2m
+                poids: 24.9kg
+                description: "Ses ailes et ses pattes ont des muscles développés. Il peut voler en agrippant un petit Pokémon."
+                forme antérieure: étourvol
+                évolution: aucune
+
+                }
+        }
+}
+
+onix{
+    type: roche, sol
+    taille: 8.8m 
+    poids: 210kg
+    description: "Il traverse le sol en se tortillant grâce à son long corps robuste. Il se nourrit en creusant."
+    forme antérieure: aucune 
+    évolution: steelix
+
+        steelix{
+            type: acier, sol
+            taille: 9.2m
+            poids: 400kg
+            description: "Ses mâchoires robustes peuvent broyer la pierre. Ses yeux percent la pénombre souterraine."
+            forme antérieure: onix
+            évolution: aucune
+
+        }
+}
+
+lixy{
+    type: électrik
+    taille: 0.5m
+    poids: 9.5kg
+    description: "Les muscles de ses pattes avant produisent de l'électricité. Son corps s'illumine en cas de danger."
+    forme antérieure: aucune
+    évolution: luxio, luxray
+
+        luxio{
+            type: éléctrik
+            taille: 0.9m
+            poids: 30.5kg
+            description: "Il pose ses pattes avant sur ses pairs et émet des impulsions avec ses griffes pour communiquer."
+            forme antérieure: lixy
+            évolution: luxray
+
+                
+                luxray{
+                type: éléctrik
+                taille: 1.4m
+                poids: 42kg
+                description: "Quand ses yeux se dorent, il peut repérer une proie cachée, même si elle est derrière un mur." 
+                forme antérieure: luxio
+                évolution: aucune
+
+                }
+        }
+}
+
+machoc{
+    type: combat
+    taille: 0.8m
+    poids: 19.5kg
+    description: "Il a beau s'entrainer, ses muscles ne fatiguent jamais. Il vit dans les montagnes à l'écart des humains."
+    forme antérieure: aucune
+    évolution: machopeur, mackogneur
+
+        machopeur{
+            type: combat
+            taille: 1.5m
+            poids: 70.5kg
+            description: "Il peut soulever un camion d'une main. Il se sert de sa force pour aider dans des tâches physiques."
+            forme antérieure: machoc
+            évolution: mackogneur
+
+                mackogneur{
+            type: combat
+            taille: 1.6m
+            poids: 130kg
+            description: "Il peut renverser un train d'un simple coup de poing, mais il bute sur les tâches plus délicates."
+            forme antérieure: machopeur
+            évolution: aucune
+
+                }
+        }
+}
+
+fantominus{
+    type: spectre, poison
+    taille: 1.3m
+    poids: 0.1kg
+    description: "Un Pokémon né de gaz toxiques. Son nuage toxique peut terrasser les ennemis les plus imposants."
+    forme antérieure: aucune
+    évolution: spectrum, ectoplasma
+
+        spectrum{
+            type: spectre, poison
+            taille: 1.6m
+            poids: 0.1kg
+            description: "Il vole l'énergie vitale de l'ennemi d'un coup de langue gazeuse. Il aime chasser dans l'ombre."
+            forme antérieure: fantominus 
+            évolution: ectoplasma
+    
+                ectoplasma{
+                type: spectre, poison
+                taille: 1.5m
+                poids: 40.5kg
+                description: "Il guette l'occasion de voler l'énergie vitale de sa proie, caché dans un coin sombre de la pièce."
+                forme antérieure: spectrum
+                évolution: aucune
+
+                }
+        }
+}
+
+mew{
+    type: psy
+    taille: 0.4g
+    poids: 4kg
+    description: "Nombre de scientifiques voient en lui l'ancêtre des Pokémon car il maîtrise toutes leurs capacités."
+    forme antérieure: aucune
+    évolution: aucune
+}
+
+mewtwo{
+    type: psy
+    taille: 2m
+    poids: 122kg
+    description: "Un Pokémon conçu en réorganisant les gènes de Mew. On raconte qu'il s'agit du Pokémon le plus féroce."
+    forme antérieure: aucune
+    évolution: aucune
+}
+
+dialga{
+    type: acier, dragon
+    taille: 5.4m
+    poids: 683kg
+    description: "Les mythes parlent de ce Pokémon. On dit que le temps s'est mis en mouvement à sa naissance."
+    forme antérieure: aucune
+    évolution: aucune
+}
+
+palkia{
+    type: eau, dragon
+    taille: 4.2m
+    poids: 336kg
+    description: "On dit qu'il hante une faille d'une dimension parallèle à la nôtre. Il apparaît dans la mythologie."
+    forme antérieure: aucune
+    évolution: aucune
+}
+
+arceus{
+    type: normal
+    taille: 3.2m
+    poids: 320kg
+    description: "Dans la mythologie, ce Pokémon existait déjà avant la formation de l'univers."
+    forme antérieure: aucune
+    évolution: aucune
+}
+

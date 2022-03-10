@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Machoc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="machoc.png" alt="Machoc">
+            <p>Machoc</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="machopeur.png" alt="Machopeur">
+            <p>Machopeur</p>
+        </div>
+
+        <div id="c" class="hidden">
+            <img src="mackogneur.png" alt="Mackogneur">
+            <p>Mackogneur</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: combat
+                <li>Taille: 0.8m 
+                <li>Poids: 19.5kg
+                <li>Description: "Il a beau s'entrainer, ses muscles ne fatiguent jamais. <br> Il vit dans les montagnes à l'écart des humains."
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: combat
+                <li>Taille: 1.5m
+                <li>Poids: 70.5kg
+                <li>Description: "Il peut soulever un camion d'une main. <br> Il se sert de sa force pour aider dans des tâches physiques."
+            </ul>
+            
+            <ul class="hidden">                
+                <li>Type: combat
+                <li>Taille: 1.6m                
+                <li>Poids: 130kg
+                <li>Description: "Il peut renverser un train d'un simple coup de poing, mais il bute sur les tâches plus délicates."
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="machoc.png" alt="Machoc">
+            <p>Machoc</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="machopeur.png" alt="Machopeur">
+            <p>Machopeur</p> 
+        </div>
+
+        <div id="z" onclick="evolution(this)">    
+            <img src="mackogneur.png" alt="Mackogneur">
+            <p>Mackogneur</p>   
+        </div>
+
+</div>
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Machoc";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Machopeur";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "Mackogneur";
+    }
+
+}
+
+</script>
+</body>
+</html>
