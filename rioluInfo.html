@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Riolu</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styleInfo.css">        
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="riolu.png" alt="Riolu">
+            <p>Riolu</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="lucario.png" alt="Lucario">
+            <p>Lucario</p>
+        </div>
+
+        <div id="c" class="xxx">
+            <img src="User_Avatar_2.png" alt="">
+            <p>xxx</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: combat
+                <li>Taille: 0.7m 
+                <li>Poids: 20.2kg
+                <li>Description: "Son corps est frêle mais puissant. <br> Il peut traverser trois montagnes et deux canyons en une nuit."
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: combat
+                <li>Taille: 1.2m
+                <li>Poids: 54kg
+                <li>Description: "Il peut deviner les pensées et les mouvements des autres en analysant leur aura."
+            </ul>
+            
+            <ul class="xxx">                
+                <li>Type: normal
+                <li>Taille: 1.85                
+                <li>Poids: 72kg
+                <li>Description: Il s'agit de mes mensurations...
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="riolu.png" alt="Riolu">
+            <p>Riolu</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="lucario.png" alt="Lucario">
+            <p>Lucario</p> 
+        </div>
+
+        <div id="z" class="xxx" onclick="evolution(this)">    
+            <img src="User_Avatar_2.png" alt="Ectoplasma">
+            <p>xxx</p>   
+        </div>
+
+</div>
+<div id="bouton">
+    <button><a href="index.html">Retour</a></button>
+    </div>
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Riolu";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Lucario";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "xxx"; //alors là si quelqu'un arrive à réussir cette condition vraiment bravo
+    }
+
+}
+
+</script>
+</body>
+</html>

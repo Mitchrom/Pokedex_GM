@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Tortipouss</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<link rel="stylesheet" href="styleInfo.css">
+
+</head>
+
+
+
+<body>
+<header></header>
+
+<div id="main">
+
+    <div id="pokemon">
+
+        <div id="a">
+            <img src="tortipouss.png" alt="Tortipouss">
+            <p>Tortipouss</p>
+        </div>
+
+        <div id="b" class="hidden">
+            <img src="boskara.png" alt="Boskara">
+            <p>Boskara</p>
+        </div>
+
+        <div id="c" class="hidden">
+            <img src="torterra.png" alt="Torterra">
+            <p>Torterra</p>
+        </div>
+
+    </div>
+
+
+    <div id="infos">
+
+        <div id="titre">
+            <h1>Infos Pokémon</h1>
+        </div>
+
+        <div id="infos2">
+            <ul>   
+                <li>Type: plante
+                <li>Taille: 0.4m
+                <li>Poids: 10.2kg
+                <li>Description: "Son corps produit de l'oxygène par photosynthèse. <br> La feuille sur sa tête flétrit quand il a soif." 
+            </ul>
+                
+            <ul class="hidden">  
+                <li>Type: plante
+                <li>Taille: 1.1m
+                <li>Poids: 97.2kg
+                <li>Description: "Sa carapace est faite de terre durcie. <br> Certains Pokémon picorent les Baies des arbres sur son dos."
+            </ul>
+            
+            <ul class="hidden">                
+                <li>Type: plante, sol
+                <li>Taille: 2.2kg                 
+                <li>Poids: 310kg
+                <li>Description: "Autrefois, les gens pensaient qu'un gigantesque Torterra vivait sous la surface de la terre."
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h2>Évolutions</h2>
+    <div id="second">
+
+        <div id="x" onclick="evolution(this)">
+            <img src="tortipouss.png" alt="Tortipouss">
+            <p>Tortipouss</p>
+        </div>
+
+        <div id="y" onclick="evolution(this)">    
+            <img src="boskara.png" alt="Boskara">
+            <p>Boskara</p> 
+        </div>
+
+        <div id="z" onclick="evolution(this)">    
+            <img src="torterra.png" alt="Torterra">
+            <p>Torterra</p>   
+        </div>
+
+</div>
+<div id="bouton">
+<button><a href="index.html">Retour</a></button>
+</div>
+<footer></footer>
+
+
+
+<script>
+/*Lorsqu'on clique sur le nom d'un pokémon, cela affiche les infos de ce dernier*/
+
+function evolution(x){
+    var a = x.id
+    //console.log(a)
+    //console.log(typeof a)
+
+    if(a=="x"){
+        var b = document.getElementById("a").classList.remove("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.remove("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Tortipouss";
+    }
+
+    else if(a=="y"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.remove("hidden");
+        var b = document.getElementById("c").classList.add("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.remove("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.add("hidden");
+
+        document.title = "Boskara";
+    }
+
+    else if(a=="z"){
+        var b = document.getElementById("a").classList.add("hidden");
+        var c = document.getElementById("b").classList.add("hidden");
+        var b = document.getElementById("c").classList.remove("hidden");
+
+        var d = document.getElementsByTagName("ul")[0].classList.add("hidden");
+        var e = document.getElementsByTagName("ul")[1].classList.add("hidden");
+        var f = document.getElementsByTagName("ul")[2].classList.remove("hidden");
+
+        document.title = "Torterra";
+    }
+
+}
+
+</script>
+</body>
+</html>
